@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) =>
   res.render('index', {
     title: 'Member App',
-    members
-  })
+    members,
+  }),
 );
 
 // Set static folder
